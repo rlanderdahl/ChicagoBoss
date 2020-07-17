@@ -8,6 +8,7 @@ defmodule Boss.Mixfile do
       elixir: "~> 1.9",
       name: "Chicago Boss",
       compilers: [:erlang, :app],
+      erlc_options: [{:parse_transform, :lager_transform}, {:parse_transform, :cut}, {:parse_transform, :do}, {:parse_transform, :import_as}],
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
