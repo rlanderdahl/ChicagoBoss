@@ -17,3 +17,6 @@ plt/
 /.settings/
 /ebin/
 _build
+Mnesia.*/
+rebar3.crashdump
+log/
