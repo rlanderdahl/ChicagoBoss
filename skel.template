@@ -7,7 +7,6 @@
 {dir, "{{dest}}/log"}.
 {dir, "{{dest}}/priv/lang"}.
 {dir, "{{dest}}/priv/migrations"}.
-{dir, "{{dest}}/ebin"}.
 {dir, "{{dest}}/include"}.
 {dir, "{{dest}}/src/lib"}.
 {dir, "{{dest}}/src/view"}.
@@ -38,8 +37,8 @@
 {file, "skel/src/view/lib/README", "{{dest}}/src/view/lib/README"}.
 {file, "skel/init.sh", "{{dest}}/init.sh"}.
 {file, "skel/init-dev.sh", "{{dest}}/init-dev.sh"}.
-{file, "skel/rebar", "{{dest}}/rebar"}.
+{file, "skel/rebar3", "{{dest}}/rebar3"}.
 {file, "skel/rebar.cmd", "{{dest}}/rebar.cmd"}.
-{chmod, 8#755, "{{dest}}/init.sh"}.
-{chmod, 8#755, "{{dest}}/init-dev.sh"}.
-{chmod, 8#755, "{{dest}}/rebar"}.
+{chmod, "{{dest}}/init.sh", 8#755}.
+{chmod, "{{dest}}/init-dev.sh", 8#755}.
+{chmod, "{{dest}}/rebar3", 8#755}.
